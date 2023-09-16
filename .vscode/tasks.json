@@ -19,10 +19,7 @@
         {
             "label": "Run Uvicorn Server",
             "type": "shell",
-            "command": "${command:python.interpreterPath} -m uvicorn main:app --reload",
-            "options": {
-                "cwd": "${workspaceFolder}/app"
-            }
+            "command": "${command:python.interpreterPath} -m uvicorn app.main:app --reload"
         },
         {
             "label": "Start pgadmin4",
